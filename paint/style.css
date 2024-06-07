@@ -1,0 +1,150 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinear elementos al principio del contenedor */
+    align-items: center; /* Centrar horizontalmente */
+    height: 100vh;
+}
+
+.grosorTool {
+    margin-top: 20px; /* Espacio adicional desde arriba */
+    display: flex; /* Utilizar flexbox */
+    align-items: center; /* Centrar verticalmente los elementos */
+    position: relative;
+    top: 700px;
+}
+
+.grosor{
+    color:#20c4fb;
+}
+
+.grosorTool p {
+    margin-right: 30px; /* Margen entre el texto y el input de rango */
+}
+
+.colorTool input[type="color"] {
+    width: 50px; /* Ancho */
+    height: 50px; /* Altura */
+    border: none; /* Quitar el borde */
+}
+
+.botones {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: flex-end; /* Alinear en la parte inferior */
+    margin-top: auto; /* Empujar hacia abajo para colocar en la parte inferior */
+    margin-bottom: 10px; /* Espacio adicional desde abajo */
+    position: relative;
+    right: 220px;
+    top: -8px;
+}
+
+.botones button {
+    margin-right: 10px; /* Agregar margen entre los botones */
+}
+
+
+.toolbox {
+    align-items: center; /* Alinear elementos al inicio*/
+    position: fixed;
+    top: 3%; /* Posición desde arriba*/
+    z-index: 1;
+    border-radius: 20px;
+}
+
+
+.toolbox .tool {
+    margin-top: 20px; /* Añadir un margen inferior a cada elemento del menú */
+}
+
+.tool:hover {
+    transform: scale(2);
+}
+
+.canvas {
+    border: 1px solid #000000;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 15%;
+    z-index: 1;
+}
+
+.undoRedo {
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    transform: translateX(-50%);
+}
+
+.tool img {
+    width: 30px;
+    height: 30px;
+}
+
+button {
+    background-color: #20c4fb;
+    border:#000000;
+    color: black;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.botones :hover {
+    background-color: #20c4fb;
+}
+
+/* Estilos para el menú toolbox */
+.toolbox {
+    display: flex;
+    overflow-x: auto;
+    padding: 5px;
+    background-color: #20c4fb;
+}
+
+.tool {
+    margin-right: 10px;
+}
+
+.canvas-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#undo{
+    width: 40px;
+    height: 40px;
+    padding: 5%;
+
+}
+
+#redo{
+    width: 40px;
+    height: 40px;
+    padding: 5%;
+}
+
+#modal{
+    position: relative;
+    top: -765px;
+    left: 10px;
+}
+
+#pngButton{
+    border-radius: 20px;
+}
+
+#pdfButton{
+    border-radius: 20px;
+}
